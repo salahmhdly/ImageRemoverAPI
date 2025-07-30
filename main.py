@@ -11,6 +11,7 @@ CORS(app)
 def home():
     return "<h1>الخادم يعمل على GitHub Codespaces!</h1>"
 
+
 @app.route('/api/remove-background', methods=['POST'])
 def remove_background_api():
     if 'file' not in request.files:
